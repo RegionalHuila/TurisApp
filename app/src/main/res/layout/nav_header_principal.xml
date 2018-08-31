@@ -28,7 +28,7 @@
         android:textSize="30sp"
         android:layout_marginBottom="25dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:fontFamily="@font/fuente2"
+        android:fontFamily="@font/fuente"
         android:textStyle="normal"/>
 
 

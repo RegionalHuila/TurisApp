@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".InicioFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <ImageView
         android:layout_width="400dp"
         android:layout_height="300dp"
@@ -14,12 +13,25 @@
         android:layout_marginTop="20dp"
         android:id="@+id/ivTitulo"/>
 
-    <TextView
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:text="@string/descripcion_proyecto"
-        android:layout_centerHorizontal="true"
-        android:textSize="30sp"
-        android:layout_below="@id/ivTitulo"/>
+   <ScrollView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/ivTitulo">
+
+       <TextView
+           android:layout_width="400dp"
+           android:layout_height="wrap_content"
+           android:text="@string/descripcion_proyecto"
+           android:layout_centerHorizontal="true"
+           android:textSize="25sp"
+           android:textAlignment="textStart"
+           android:fontFamily="@font/fuente" />
+
+   </ScrollView>
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
 
 </RelativeLayout>
