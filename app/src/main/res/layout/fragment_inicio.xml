@@ -6,8 +6,8 @@
     tools:context=".InicioFragment">
 
     <ImageView
-        android:layout_width="400dp"
-        android:layout_height="300dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         android:src="@drawable/turisapp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
@@ -25,7 +25,7 @@
            android:layout_centerHorizontal="true"
            android:textSize="25sp"
            android:textAlignment="textStart"
-           android:fontFamily="@font/fuente" />
+           android:fontFamily="@font/fuente3" />
 
    </ScrollView>
 
