@@ -7,19 +7,19 @@
         <item
             android:id="@+id/nav_inicio"
             android:icon="@drawable/turisapp_inicio"
-            android:title="Import" />
+            android:title="Inicio" />
         <item
             android:id="@+id/nav_hoteles"
-            android:icon="@drawable/turisapp_hoteles"
-            android:title="Gallery" />
+            android:icon="@drawable/turisapp_hotel"
+            android:title="Hoteles" />
         <item
             android:id="@+id/nav_sitios"
             android:icon="@drawable/turisapp_sitios"
-            android:title="Slideshow" />
+            android:title="Sitios" />
         <item
             android:id="@+id/nav_res"
-            android:icon="@drawable/turisapp_restaurante"
-            android:title="Tools" />
+            android:icon="@drawable/turisapp_restaurant"
+            android:title="Restaurantes" />
     </group>
 
 </menu>
