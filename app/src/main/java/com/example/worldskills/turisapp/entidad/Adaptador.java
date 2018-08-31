@@ -18,6 +18,8 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.HotelesViewHolder>
     int modo = 0;
     View v;
 
+
+    //constructor para el recycler
     public Adaptador(Context context, List<ListaLugares> lugaresList, int modo) {
         this.context = context;
         this.lugaresList = lugaresList;
@@ -26,11 +28,14 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.HotelesViewHolder>
 
     @NonNull
     @Override
+
+    //desiciones para el el cambio de gridlayout
     public HotelesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
+//iniciaba la vista en modo lista
         if (modo==1){
-            v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_uno, parent, false);
 
+            v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_uno, parent, false);
+//iniciaba la vista en modo de dos columnas
         }else {
             v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_dos, parent, false);
 
@@ -41,6 +46,8 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.HotelesViewHolder>
 
     }
 
+
+    //metodo donde iba el json
     @Override
     public void onBindViewHolder(@NonNull HotelesViewHolder holder, int position) {
 
@@ -50,6 +57,7 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.HotelesViewHolder>
 
 
     }
+
 
     @Override
     public int getItemCount() {

@@ -4,9 +4,11 @@ public class ListaLugares {
 
     String urlImagen, nombre, ubicacion,descripion,laltitud,longitud;
 
+    //constructor vacio
     public ListaLugares() {
     }
 
+    //constructor lleno con los campos para el gridlayout
     public ListaLugares(String urlImagen, String nombre, String ubicacion, String descripion, String laltitud, String longitud) {
         this.urlImagen = urlImagen;
         this.nombre = nombre;
@@ -15,6 +17,8 @@ public class ListaLugares {
         this.laltitud = laltitud;
         this.longitud = longitud;
     }
+
+
 
     public String getUrlImagen() {
         return urlImagen;
