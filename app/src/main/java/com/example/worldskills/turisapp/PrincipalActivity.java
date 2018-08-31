@@ -24,6 +24,7 @@ public class PrincipalActivity extends AppCompatActivity
         SitiosFragment.OnFragmentInteractionListener,
         RestaurantesFragment.OnFragmentInteractionListener{
 
+    //Se declaran variables
     Fragment fragmento;
     String tag = "";
 
@@ -90,13 +91,23 @@ public class PrincipalActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
+//Desicion que valida el item seleccionado
         if (id == R.id.nav_inicio) {
+
+            //Tag es igual a la pantalla que dan click
             tag = "inicio";
+
+            //Fragmento es igual al nombre de el fragmento_layout
             fragmento = new InicioFragment();
+
+            //Se crea la transaccion
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+            //Se reemplaza el contenedor por el fragment
             transaction.replace(R.id.contenedor, fragmento);
             transaction.addToBackStack(null);
+
+            //Se sube transaccion
             transaction.commit();
 
 
@@ -134,10 +145,17 @@ public class PrincipalActivity extends AppCompatActivity
     @Override
     public void onFragmentInteraction(Uri uri) {
 
+        //Se crea la transaccion
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+        //Se reemplaza el contenedor por el fragment
         transaction.replace(R.id.contenedor, fragmento);
+
+        //Se agrega Fragmento y Tag
         transaction.add(fragmento, ""+tag);
         transaction.addToBackStack(null);
+
+        ////Se sube transaccion
         transaction.commit();
 
     }
