@@ -6,7 +6,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class AyudaBaseDatos extends SQLiteOpenHelper {
 
+    //Se crea la tabla Hoteles
     private static final String CREAR_SQL_HOTELES =
+
+            //Se crean los campos que iran dentro de la tabla hoteles
             "CREATE TABLE " + TablaDatos.LectorEntradaHoteles.NOMBRE_TABLA + " (" +
                     TablaDatos.LectorEntradaHoteles._ID + " INTEGER PRIMARY KEY," +
                     TablaDatos.LectorEntradaHoteles.COLUMNA_NOMBRE + " TEXT," +
@@ -36,6 +39,7 @@ public class AyudaBaseDatos extends SQLiteOpenHelper {
 
 
     private static final String SQL_DELETE_ENTRIES =
+            //Metodo para borrar la tabla
             "DROP TABLE IF EXISTS " + TablaDatos.LectorEntradaHoteles.NOMBRE_TABLA;
     public AyudaBaseDatos(Context context) {
         super(context, "turist.db", null, 1);
