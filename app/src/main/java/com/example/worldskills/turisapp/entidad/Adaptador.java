@@ -11,7 +11,7 @@ import com.example.worldskills.turisapp.R;
 
 import java.util.List;
 
-public class Adaptador extends RecyclerView.Adapter<Adaptador.HotelesViewHolder> {
+public class Adaptador extends RecyclerView.Adapter<Adaptador.HotelesViewHolder>{
 
     Context context;
     List<ListaLugares> lugaresList;
@@ -44,6 +44,11 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.HotelesViewHolder>
     @Override
     public void onBindViewHolder(@NonNull HotelesViewHolder holder, int position) {
 
+
+
+
+
+
     }
 
     @Override
@@ -56,4 +61,5 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.HotelesViewHolder>
             super(itemView);
         }
     }
+
 }

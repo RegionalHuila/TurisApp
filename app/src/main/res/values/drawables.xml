@@ -1,5 +1,4 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-    <item name="turisapp_inicio" type="drawable">@android:drawable/</item>
     <item name="turisapp_hoteles" type="drawable">@android:drawable/ic_menu_gallery</item>
     <item name="turisapp_sitios" type="drawable">@android:drawable/ic_menu_slideshow</item>
     <item name="turisapp_restaurantes" type="drawable">@android:drawable/ic_menu_manage</item>

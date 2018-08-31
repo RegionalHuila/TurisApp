@@ -14,11 +14,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@drawable/turisapp_marcaagua" />
+        android:layout_marginBottom="45dp"
+        app:srcCompat="@drawable/turisapp_icono" />
 
     <TextView
         android:layout_width="match_parent"
