@@ -39,8 +39,8 @@ public class PrincipalActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),MapasActivity.class);
-                startActivity(intent);
+          //Se supone que iba eñ intent a mapas pero :(
+
             }
         });
 
